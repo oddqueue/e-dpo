@@ -1,0 +1,33 @@
+model:
+  pretrained_model_name_or_path: "meta-llama/Meta-Llama-3-8B-Instruct"
+  # attn_implementation: "flash_attention_2"
+
+dataset: 
+  name: "princeton-nlp/llama3-ultrafeedback"
+  train_split: "train"
+  eval_split: "test"
+
+training_args:
+  run_name: "llama3_instruct"
+  output_dir: "experiments/llama3_instruct"
+  bf16: True
+  beta: 0.01
+  epsilon: 0.01
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  gradient_checkpointing: True
+  learning_rate: 7e-7
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.1
+  max_length: 2048
+  max_prompt_length: 1800
+  num_train_epochs: 1
+  logging_steps: 1
+  report_to: "wandb"
+  save_strategy: "steps"
+  save_steps: 0.2
+  seed: 42
+  do_eval: true
+  eval_strategy: "steps"
+  eval_steps: 400
+  per_device_eval_batch_size: 2

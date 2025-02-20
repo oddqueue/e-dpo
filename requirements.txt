@@ -1,0 +1,7 @@
+wandb
+omegaconf==2.3.0
+transformers==4.48.0
+datasets==3.2.0
+trl==0.13.0
+accelerate==1.2.1
+deepspeed==0.16.2
