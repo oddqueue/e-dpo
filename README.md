@@ -1,7 +1,7 @@
 # 🎚️ $\varepsilon$-Direct Preference Optimization ($\varepsilon$-DPO)
 > [**KL Penalty Control via Perturbation for Direct Preference Optimization**](https://arxiv.org/abs/2502.13177),            
 Sangkyu Lee<sup>1,*</sup>,
-Janghoon Han<sup>2;</sup>,
+Janghoon Han<sup>2</sup>,
 Hosung Song<sup>2</sup>, 
 Stanley Jungkyu Choi<sup>2</sup>, 
 Honglak Lee<sup>2,3</sup>,
