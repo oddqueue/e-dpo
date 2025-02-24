@@ -68,3 +68,14 @@ accelerate launch --config_file=configs/accelerate.yaml train.py --config=config
 ```
 
 If you want to enable FlashAttention 2, please uncomment the `attn_implementation: "flash_attention_2"` in `configs/mistral_instruct.yaml` and `configs/mistral_instruct.yaml`.
+
+
+## Citation
+```
+@article{lee2025kl,
+  title={KL Penalty Control via Perturbation for Direct Preference Optimization},
+  author={Lee, Sangkyu and Han, Janghoon and Song, Hosung and Choi, Stanley Jungkyu and Lee, Honglak and Yu, Youngjae},
+  journal={arXiv preprint arXiv:2502.13177},
+  year={2025}
+}
+```
