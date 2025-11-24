@@ -5,11 +5,12 @@ Janghoon Han<sup>2</sup>,
 Hosung Song<sup>2</sup>, 
 Stanley Jungkyu Choi<sup>2</sup>, 
 Honglak Lee<sup>2,3</sup>,
-Youngjae Yu<sup>1</sup><br>
+Youngjae Yu<sup>4</sup><br>
 <sup>1</sup>Yonsei University,
 <sup>2</sup>LG AI Research, 
-<sup>3</sup>University of Michigan, Ann Arbor<br>
-<sup>\*</sup>Work done during internship at LG AI Research
+<sup>3</sup>University of Michigan, Ann Arbor,
+<sup>4</sup>Seoul National University<br>
+<sup>\*</sup>Work done during internship at LG AI Research.
 
 <p align="center">
   <img src="assets/e_dpo.jpeg" height="100%" width="100%">
@@ -67,7 +68,7 @@ accelerate launch --config_file=configs/accelerate.yaml train.py --config=config
 accelerate launch --config_file=configs/accelerate.yaml train.py --config=configs/llama3_instruct.yaml
 ```
 
-If you want to enable FlashAttention 2, please uncomment the `attn_implementation: "flash_attention_2"` in `configs/mistral_instruct.yaml` and `configs/mistral_instruct.yaml`.
+If you want to enable FlashAttention 2, please uncomment the `attn_implementation: "flash_attention_2"` in `configs/mistral_instruct.yaml` and `configs/llama3_instruct.yaml`.
 
 
 ## Citation
